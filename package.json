@@ -1,7 +1,6 @@
 {
   "name": "react-dice-roll",
   "version": "1.2.3",
-  "type": "module",
   "description": "A highly customizable dice roll package built in React.",
   "scripts": {
     "build": "rimraf dist && rollup -c",
@@ -15,8 +14,14 @@
     "react"
   ],
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "exports": {
-  ".": "./dist/index.js"
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "repository": {
     "type": "git",

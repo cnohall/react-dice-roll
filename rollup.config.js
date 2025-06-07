@@ -10,7 +10,7 @@ export default {
     {
       file: 'dist/index.js',
       format: 'cjs',
-      exports: 'named',
+      exports: 'default', // Changed from 'named' to 'default'
       sourcemap: true,
       strict: false
     }
