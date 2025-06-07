@@ -1,4 +1,4 @@
-import { ReactChild } from 'react';
+import { ReactNode } from 'react';
 import { TValueClassMap, TFaceTransformMap, TDefaultFaceGrid } from './_types';
 
 export const valueClassMap: TValueClassMap = {
@@ -37,7 +37,7 @@ export const faceClasses = [
     '_3dface _3dface--six'
 ];
 
-export const times = (counter: number, callback: (index: number) => ReactChild) => {
+export const times = (counter: number, callback: (index: number) => ReactNode) => {
     const data = [];
     for(let i = 0; i < counter; i++) {
         data.push(callback(i));

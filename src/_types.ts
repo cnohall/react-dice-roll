@@ -21,7 +21,7 @@ export type TKeyValuePair = {
 export type TSingleFace = {
     className: string;
     style: TKeyValuePair;
-    children: JSX.Element | null;
+    children: React.ReactNode | null;
 };
 
 export type TValueClassMap = {

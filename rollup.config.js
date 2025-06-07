@@ -1,4 +1,4 @@
-import { terser } from "rollup-plugin-terser";
+import { terser } from 'rollup-plugin-terser';
 import sass from 'rollup-plugin-sass';
 import bundleSize from 'rollup-plugin-bundle-size';
 import cleanup from 'rollup-plugin-cleanup';
